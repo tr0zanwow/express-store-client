@@ -1,24 +1,6 @@
-# express-store-client-vue
+# Express Store Client
 
-## Project setup
-```
-npm install
-```
+## VueJS based Express Store Client Backed with Flask Server
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Check deployed client
+See [Express Store Client - Vue](http://ec2-35-165-134-117.us-west-2.compute.amazonaws.com/).
