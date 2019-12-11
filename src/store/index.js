@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VuexPersist from 'vuex-persist'
+import router from '../router'
 
 Vue.use(Vuex)
 
@@ -23,18 +24,19 @@ export default new Vuex.Store({
   mutations: {
     setisAuthenticated(state,payload){
       state.isAuthenticated = payload
+      router.push("/")
     },
     setUserData(state,payload){
       state.userData = payload
     },
     setSearchText(state,payload){
-      state.isAuthenticated = payload
+      state.searchText = payload
     },
     setAccessData(state,payload){
-      state.userData = payload
+      state.accessData = payload
     },
     setErrorData(state,payload){
-      state.userData = payload
+      state.errorData = payload
     }
   },
   actions: {

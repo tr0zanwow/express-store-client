@@ -7,7 +7,8 @@
       <v-toolbar-title>Express Stores</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
-        v-model="searchText"
+        v-model.lazy="searchField"
+        @change="addSeachTextToStore"
         class="mx-4"
         flat
         hide-details
@@ -40,13 +41,22 @@ import { Auth } from 'aws-amplify';
 
 export default {
     name:'Navbar',
+    data(){
+      return{
+        searchField: ""
+      }
+    },
     methods:{
       signOut(){
         Auth.signOut()
         .then(() => {
-          this.$router.push('login')
+          this.$store.commit("setisAuthenticated",false)
+          this.$router.push({ path: 'login' })
         })
         .catch(() => {});
+      },
+      addSeachTextToStore(){
+        this.$store.commit("setSearchText",this.searchField)
       }
     }
 }

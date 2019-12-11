@@ -10,6 +10,7 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: NavBarLayout,name:'home',
+  redirect: 'accessLog',
   beforeEnter: (to, from, next) => {
     if(store.state.isAuthenticated){
       next()
@@ -33,7 +34,15 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: Login
+    component: Login,
+    beforeEnter: (to, from, next) => {
+      if(store.state.isAuthenticated){
+        next({name: 'accessLog'})
+      }
+      else{
+        next()
+      }
+    },
   }
 ]
 
