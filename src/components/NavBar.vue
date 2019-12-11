@@ -4,9 +4,10 @@
       dark
       flat
     >
-      <v-toolbar-title>Express Store</v-toolbar-title>
+      <v-toolbar-title>Express Stores</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-text-field
+        v-model="searchText"
         class="mx-4"
         flat
         hide-details
@@ -17,14 +18,14 @@
 
       <v-spacer></v-spacer>
       
-      <v-btn text small color="white">Logout<v-icon right dark>mdi-logout</v-icon></v-btn>
+      <v-btn @click="signOut" text small color="white">Logout<v-icon right dark>mdi-logout</v-icon></v-btn>
 
       <template
       
        v-slot:extension>
         <v-tabs
           centered
-          slider-color="white"
+          slider-color="green"
           background-color="transparent"
         >
          <v-tab to="/accessLog">Access Log</v-tab>
@@ -35,10 +36,18 @@
 </template>
 
 <script>
+import { Auth } from 'aws-amplify';
+
 export default {
     name:'Navbar',
     methods:{
-      
+      signOut(){
+        Auth.signOut()
+        .then(() => {
+          this.$router.push('login')
+        })
+        .catch(() => {});
+      }
     }
 }
 </script>

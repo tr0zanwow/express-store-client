@@ -7,7 +7,10 @@
 <style lang="scss">
 ::-webkit-scrollbar{
 display: none;
+overflow: hidden;
+
 }
+
 </style>
 
 <script>
