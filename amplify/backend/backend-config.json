@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"expressstoreclient2919d67d": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

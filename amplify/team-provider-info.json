@@ -1,0 +1,38 @@
+{
+    "venv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-express-store-client-venv-71107-authRole",
+            "UnauthRoleArn": "arn:aws:iam::822768112965:role/amplify-express-store-client-venv-71107-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::822768112965:role/amplify-express-store-client-venv-71107-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-express-store-client-venv-71107-deployment",
+            "UnauthRoleName": "amplify-express-store-client-venv-71107-unauthRole",
+            "StackName": "amplify-express-store-client-venv-71107",
+            "StackId": "arn:aws:cloudformation:us-west-2:822768112965:stack/amplify-express-store-client-venv-71107/5075e450-1bb7-11ea-9416-0a43e2aa5bac",
+            "AmplifyAppId": "d16g66tee5gf5s"
+        },
+        "categories": {
+            "auth": {
+                "expressstoreclient2919d67d": {}
+            }
+        }
+    },
+    "expressenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-express-store-client-expressenv-72152-authRole",
+            "UnauthRoleArn": "arn:aws:iam::822768112965:role/amplify-express-store-client-expressenv-72152-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::822768112965:role/amplify-express-store-client-expressenv-72152-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-express-store-client-expressenv-72152-deployment",
+            "UnauthRoleName": "amplify-express-store-client-expressenv-72152-unauthRole",
+            "StackName": "amplify-express-store-client-expressenv-72152",
+            "StackId": "arn:aws:cloudformation:us-west-2:822768112965:stack/amplify-express-store-client-expressenv-72152/d101a5e0-1bb8-11ea-9b70-0a59d1b75b46",
+            "AmplifyAppId": "d16g66tee5gf5s"
+        },
+        "categories": {
+            "auth": {
+                "expressstoreclient2919d67d": {}
+            }
+        }
+    }
+}
